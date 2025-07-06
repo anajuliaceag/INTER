@@ -1,40 +1,81 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 30px;
-  background-color: #f1f1f1;
+  background: linear-gradient(to right, #ffe4f0, #ffd6e8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #660033;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  text-align: center;
-  color: #333;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-bottom: 20px;
+  color: #cc0066;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #ff99bb;
+  font-weight: bold;
 }
 
 #avisos {
-  color: red;
+  color: #b30059;
   font-weight: bold;
   margin-bottom: 20px;
+  font-size: 1.1rem;
+  min-height: 24px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff66a3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(255, 102, 163, 0.4);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60073;
+  box-shadow: 0 6px 14px rgba(230, 0, 115, 0.6);
+}
+
+#listaTimes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
 }
 
 .time {
-  background: white;
-  padding: 15px;
-  border-left: 5px solid #007bff;
-  margin-bottom: 15px;
-  box-shadow: 0 0 5px #ccc;
+  background-color: #fff0f5;
+  border: 2px solid #ff99cc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(204, 51, 108, 0.2);
 }
 
 .time strong {
+  display: block;
   text-transform: uppercase;
-  font-size: 18px;
+  color: #cc0066;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .jogador {
-  margin-left: 15px;
   text-transform: lowercase;
+  margin-left: 15px;
+  color: #660033;
+  font-weight: bold;
+  padding: 4px 0;
 }
